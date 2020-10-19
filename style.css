@@ -1,29 +1,40 @@
-.container {
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(47, 49, 49);
+}
+.item1 {
+  grid-area: header;
+  height: 20vh;
+  background-color: black;
+  text-align: center;
+  font-size: 5em;
+  font-family: Arial, Helvetica, sans-serif;
+  color: orange;
+}
+.item2 {
+  grid-area: menu;
+  height: 80vh;
+  background-color: white;
+}
+.item3 {
+  grid-area: main;
+  height: 80vh;
+  background-color: white;
 }
 
-.header {
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header header header header header"
+    "menu menu menu main main main"
+    "menu menu menu main main main";
+  grid-gap: 10px;
+  background-color: #252729;
+  padding: 10px;
 }
 
-.main {
-}
-
-.right {
-}
-
-.form {
-}
-
-#form {
-}
-
-.button {
-}
-
-.instruction {
-}
-
-.image {
-}
-
-.price {
+#menu-content {
 }
