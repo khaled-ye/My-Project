@@ -1,24 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Finde the right Price</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="grid-container">
-      <div class="item1">Find the right Price</div>
-      <div class="item2">
-        <form>
-          <div id="menu-content">
-            <input type="text" /><br />
-            <button>Submit</button>
-          </div>
-        </form>
+    <div class="container">
+      <div class="price">The Right Price</div>
+      <div class="item1">
+        <input
+          class="inp"
+          type="text"
+          placeholder="Try to find the price (Between 0 And 1000)"
+        /><button class="btn">Submit</button>
       </div>
-      <div class="item3">Main</div>
+      <div class="last">
+        <div id="instructions" class="col-lg-8"></div>
+      </div>
     </div>
-    <script src="main.js"></script>
   </body>
+  <script src="script.js"></script>
 </html>

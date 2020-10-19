@@ -1,40 +1,89 @@
 * {
-  margin: 0;
-  padding: 0;
+  box-sizing: border-box;
 }
+
 body {
-  background-color: rgb(47, 49, 49);
+  text-align: center;
+  background-color: #232020;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.inp {
+  padding: 10px;
+  flex-grow: 1;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid silver;
+}
+.container {
+  display: flex;
+  max-width: 50%;
+  width: 100%;
+  padding: 40px;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 5rem;
+  flex-wrap: wrap;
 }
 .item1 {
-  grid-area: header;
-  height: 20vh;
-  background-color: black;
+  background-color: #f8f9fa;
+  flex-grow: 1;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-radius: 5px;
+}
+.price {
   text-align: center;
-  font-size: 5em;
-  font-family: Arial, Helvetica, sans-serif;
-  color: orange;
+  font-size: 3em;
+  flex-grow: 1;
+  margin-bottom: 30px;
+  margin-top: 0px;
+  font-family: "Poppins", sans-serif;
+  color: #ff7315;
 }
-.item2 {
-  grid-area: menu;
-  height: 80vh;
-  background-color: white;
+.btn {
+  margin-left: 10px;
+  border: none;
+  border-radius: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
 }
-.item3 {
-  grid-area: main;
-  height: 80vh;
-  background-color: white;
+.btn:hover {
+  background-color: #205792;
+}
+.last {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 15px;
+  color: white;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-areas:
-    "header header header header header header"
-    "menu menu menu main main main"
-    "menu menu menu main main main";
-  grid-gap: 10px;
-  background-color: #252729;
-  padding: 10px;
+.instruction {
+  padding: 15px;
+  margin: 10px 0;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  border-radius: 5px;
 }
 
-#menu-content {
+.plus {
+  background-color: #f67280;
+}
+
+.minus {
+  background-color: #ffa372;
+}
+
+.final {
+  background-color: #0c9463;
 }
