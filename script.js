@@ -1,6 +1,6 @@
 let input   = document.querySelector('.inp');
 let button  = document.querySelector('.btn');
-
+let restart = document.querySelector('.restart');
 
 
 let randomNumber  = Math.floor(Math.random() * 1001);
@@ -62,3 +62,7 @@ window.addEventListener('keydown',(e)=>{
         }
     }
 });
+
+restart.addEventListener('click', () => {
+    location.reload(true);
+})
